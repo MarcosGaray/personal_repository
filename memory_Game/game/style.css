@@ -1,0 +1,193 @@
+body{
+    background-image: url("https://mcdn.wallpapersafari.com/medium/28/11/bdzX1o.jpg");
+}
+
+
+.col-3 {
+    background-color: rgb(63, 213, 47);
+    padding-bottom: 0%; 
+    background: none;
+    justify-content: center;
+}
+
+.row{
+    padding-bottom: 5%;
+    background-color: antiquewhite;
+    align-self: center;
+    background: none;
+    
+}
+.separado{
+    border-bottom: #040202;
+    border-top: #040202;
+    border-style:solid ;
+    border-bottom-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden; 
+}
+#juego_cont{
+    padding-bottom: 5%;
+    max-width: 50%;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://mcdn.wallpapersafari.com/medium/28/11/bdzX1o.jpg");
+    background: rgba(5, 4, 4, 0.43);
+}
+
+
+#game_header{
+    text-align: center;
+    text-transform: uppercase;
+    height: 20px;    
+}
+
+#titulo{
+    height: 50%;
+    color: aliceblue;
+}
+#borrarHistorial{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 600px;
+    right: 20px;
+}
+.card {
+    perspective: 1000px; /*Crea una perspectiva para el efecto de volteo */
+    cursor: pointer; /*Cambia el cursor al pasar por encima */
+    margin: 0px;
+    padding: 0%;
+}
+
+.card .card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card .card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.card .card-front,
+.card .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;  /*Oculta la cara trasera durante el giro */
+    
+}
+
+.card .card-back {
+    transform: rotateY(180deg);
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /*Tamaño para pantallas pequeñas */
+        height: 45px; /*Tamaño para pantallas pequeñas */
+    }
+}
+
+/*Para pantallas medianas (entre 577px y 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .card {
+        width: 100%; /* Tamaño para pantallas medianas */
+        height: 90px;; /* Tamaño para pantallas medianas */
+    }
+}
+
+/*Para pantallas grandes (más de 992px) */
+@media (min-width: 993px) {
+    .card {
+       width: 100%;  /*Tamaño para pantallas grandes */
+       height: 125px; /*Tamaño para pantallas grandes */
+    }
+}
+
+@media (min-width: 1880px) {
+    .card {
+       width: 100%;  /*Tamaño para pantallas grandes */
+       height: 150px; /*Tamaño para pantallas grandes */
+    }
+}
+
+.navbar-text{
+    color: azure;
+}
+.btn-outline-success{
+    color: aqua;
+}
+
+/*////////////////*/
+
+
+.contenido-aside {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 25%;
+    height: 70%;
+ 
+    background-color: #f0f0f094; 
+    padding: 10px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+h2{
+   size-adjust: true;
+   font-size:x-large
+}
+/*
+@media (max-width: 576px) {
+    .contenido-aside {
+        width: 100%; 
+        height: 45px; 
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .contenido-aside {
+        width: 100%; 
+        height: 90%; 
+    }
+}
+
+
+@media (min-width: 993px) {
+    .contenido-aside {
+       width: 100%;  
+       height: 107%; 
+    }
+}*/
+
+
+
+.particula {
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1055;
+}
+
+.particula[data-padre="false"] {
+    width: 5px;
+    height: 5px;
+    z-index: 1055; /*1054 es el valor de la modal*/
+}
+
+body, html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+  
+}
+
+#fondo {
+    position: absolute;
+    bottom: -100px;
+    opacity: .4;
+}
